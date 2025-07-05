@@ -1,10 +1,8 @@
 package practice.springboot.entities;
-
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import java.util.List;
+import org.springframework.stereotype.Component;
 
 @Entity
 @Table(name = "products")
@@ -13,6 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

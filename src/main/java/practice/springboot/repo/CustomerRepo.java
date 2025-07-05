@@ -6,4 +6,5 @@ import practice.springboot.entities.Customer;
 
 @Repository
 public interface CustomerRepo extends JpaRepository<Customer, Long> {
+    void removeById(Long id);
 }

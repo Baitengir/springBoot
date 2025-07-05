@@ -3,6 +3,8 @@ package practice.springboot.entities;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -15,6 +17,7 @@ import static jakarta.persistence.CascadeType.*;
 @NoArgsConstructor
 @ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
