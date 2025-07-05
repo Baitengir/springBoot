@@ -42,8 +42,11 @@ public class Application {
 //            customerService.delete(2L);
 
             // todo order methods
-            orderService.save(new Order(LocalDate.of(2024, 11, 26)));
-            System.out.println(orderService.getById(1L));
+//            orderService.save(new Order(LocalDate.of(2024, 11, 26)));
+//            System.out.println(orderService.getById(1L));
+//            System.out.println(orderService.getAll());
+//            orderService.update(1L, new Order(LocalDate.of(2025, 6,21)));
+//            orderService.delete(1L);
         };
 
     }
