@@ -4,21 +4,15 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import practice.springboot.entities.Customer;
-import practice.springboot.entities.Order;
-import practice.springboot.entities.Product;
 import practice.springboot.service.CustomerService;
 import practice.springboot.service.OrderService;
 import practice.springboot.service.ProductService;
-
-import java.time.LocalDate;
 
 @SpringBootApplication
 public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-
     }
 
     @Bean
@@ -47,6 +41,7 @@ public class Application {
 //            System.out.println(orderService.getAll());
 //            orderService.update(1L, new Order(LocalDate.of(2025, 6,21)));
 //            orderService.delete(1L);
+
         };
 
     }

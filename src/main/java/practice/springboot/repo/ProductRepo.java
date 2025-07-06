@@ -18,14 +18,14 @@ public interface ProductRepo extends JpaRepository<Product, Long> {
             """, nativeQuery = true)
     List<Product> findProductsByOrderId(@Param("orderId") Long orderId);
 
-    void removeById(Long id);
-
     @Query (value = """
-    select * from products where id not in (
-            select products_id
-                from orders_products)
+        select * from products where id not in (
+        select products_id
+        from orders_products)
     """, nativeQuery = true)
     List<Product> findProductsNotInOrders();
 
 
+    void removeById(Long id);
 }
+
